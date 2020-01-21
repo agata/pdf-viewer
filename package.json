@@ -1,0 +1,15 @@
+{
+  "name": "pdfjs-2.3.200-dist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^7.12.1",
+    "http-server": "^0.12.1"
+  }
+}
