@@ -1922,7 +1922,16 @@ var webViewerOpenFileViaURL;
       xhr.send();
       return;
     }
-
+    if (window.pdfBase64Data) {
+      let binary = atob(window.pdfBase64Data);
+      let len = binary.length;
+      let bytes = new Uint8Array(len);
+      for (let i = 0; i < len; i++)        {
+        bytes[i] = binary.charCodeAt(i);
+      }
+      PDFViewerApplication.open(bytes);
+      return;
+    }
     if (file) {
       PDFViewerApplication.open(file);
     }
