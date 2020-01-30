@@ -1,3 +1,6 @@
+alert('viewer.js window.filename =' + window.filename  );
+
+
 /**
  * @licstart The following is the entire license notice for the
  * Javascript code in this page
@@ -3882,8 +3885,7 @@ function isDataSchema(url) {
 }
 
 function getPDFFileNameFromURL(url) {
-  var defaultFilename = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'document.pdf';
-
+  var defaultFilename = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (window.filename ? window.filename : 'document.pdf');
   if (typeof url !== 'string') {
     return defaultFilename;
   }
