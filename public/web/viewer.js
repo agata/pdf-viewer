@@ -1,6 +1,3 @@
-alert('viewer.js window.filename =' + window.filename  );
-
-
 /**
  * @licstart The following is the entire license notice for the
  * Javascript code in this page
